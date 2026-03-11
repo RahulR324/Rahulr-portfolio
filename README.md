@@ -41,20 +41,6 @@ The portfolio is designed to give recruiters and collaborators a quick overview 
 
 ---
 
-## 📂 Project Structure
-
-portfolio-website
-│
-├── index.html
-├── style.css
-├── main.js
-├── README.md
-│
-└── assets
-    
-
----
-
 ## 📌 Projects Included
 
 ###   Civil Eye
