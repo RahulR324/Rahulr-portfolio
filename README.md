@@ -1,8 +1,8 @@
 # 👋 Hi, I'm Rahul R
 
-💻 **Computer Science & Engineering Student**
-🚀 **Aspiring Full Stack Web Developer**
-📍 Kozhikode, Kerala, India
+**Sotware Engineer Trainee**
+**Computer Science & Engineering Graduate**
+   Kozhikode, Kerala, India
 
 ---
 
