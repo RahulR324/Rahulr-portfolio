@@ -1,8 +1,8 @@
 # 👋 Hi, I'm Rahul R
 
 **Sotware Engineer Trainee**
-**Computer Science & Engineering Graduate**
-   Kozhikode, Kerala, India
+  |  **Computer Science & Engineering Graduate**
+  |  Kozhikode, Kerala, India
 
 ---
 
