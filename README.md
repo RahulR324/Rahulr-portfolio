@@ -1,8 +1,8 @@
 # 👋 Hi, I'm Rahul R
 
-💻 **Computer Science & Engineering Student**
-🚀 **Aspiring Full Stack Web Developer**
-📍 Kozhikode, Kerala, India
+**Software Engineer Trainee**
+  |  **Computer Science & Engineering Graduate**
+  |  Kozhikode, Kerala, India
 
 ---
 
@@ -20,6 +20,7 @@ The portfolio is designed to give recruiters and collaborators a quick overview 
 
 * Python
 * JavaScript
+* PHP
 
 ### 🌐 Web Development
 
@@ -27,10 +28,14 @@ The portfolio is designed to give recruiters and collaborators a quick overview 
 * CSS3
 * Bootstrap
 * Django
+* Laravel
+* React.js
+* CodeIgniter 4
 
 ### 🗄️ Database
 
 * SQL
+* MySQL
 * MongoDB
 
 ### ⚙️ Tools
@@ -43,11 +48,38 @@ The portfolio is designed to give recruiters and collaborators a quick overview 
 
 ## 📌 Projects Included
 
-###   Civil Eye
+### Laravel Chat Application
+
+A modern chat application built with Laravel, MySQL, AJAX, and Sessions, supporting one-to-one private messaging and group conversations with a responsive, WhatsApp-inspired interface.
+
+**Tech Used:**
+Laravel, PHP, MySQL, AJAX, HTML, CSS, JavaScript
+
+---
+
+### Realtime AI Chatbot (Laravel + Gemini AI)
+
+An AI-powered realtime chatbot built with Laravel, Laravel Reverb, WebSockets, and Google's Gemini AI, delivering streaming AI responses similar to modern AI assistants.
+
+**Tech Used:**
+Laravel 12, Laravel Reverb, Gemini API, Laravel Echo, Vite, JavaScript
+
+---
+
+### Online Examination System
+
+A full-stack online examination platform built with React.js, CodeIgniter 4, and MySQL, allowing students to securely attend exams while admins manage exams, questions, and results.
+
+**Tech Used:**
+React.js, CodeIgniter 4, PHP 8, MySQL, Tailwind CSS, JWT
+
+---
+
+### Civil Eye
 
 A web & mobile platform that allows citizens to report public infrastructure issues, track complaint status, and improve transparency between authorities and the public.
 
-Tech Used:
+**Tech Used:**
 HTML, CSS, JavaScript, Bootstrap, Django, MySQL, Flutter, Dart
 
 ---
@@ -61,31 +93,21 @@ Node.js, MongoDB, HTML, CSS, JavaScript
 
 ---
 
-### Gym Website
+### Weather App
 
-A responsive website for a fitness center.
+A real-time weather application that shows current weather conditions, temperature, and forecasts based on user location or search.
 
 **Tech Used:**
-HTML, CSS, JavaScript, Bootstrap
+HTML, CSS, JavaScript, API Integration
 
 ---
 
-###  Travel Website
+### Task Manager
 
-A travel information and booking website.
+A full-stack productivity web application that helps users manage daily tasks efficiently with authentication, real-time updates, and a modern dashboard UI.
 
 **Tech Used:**
-HTML, CSS, JavaScript, Bootstrap, PHP
-
----
-
-
-###  Pizza Hut Landing Page
-
-A promotional landing page designed to highlight offers and improve customer engagement.
-
-Tech Used:
-HTML, CSS, JavaScript, Bootstrap
+React, Node.js, Express, MongoDB, CSS
 
 ---
 
