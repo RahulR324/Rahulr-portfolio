@@ -746,7 +746,7 @@
     padding: 36px 0;
     border-bottom: 1px solid var(--border);
     display: grid;
-    grid-template-columns: 180px 1fr;
+    grid-template-columns: 230px 1fr;
     gap: 40px;
     opacity: 0.5;
     transition: opacity 0.3s;
@@ -758,8 +758,9 @@
     font-family: 'DM Mono', monospace;
     font-size: 0.9rem;
     letter-spacing: 0.08em;
-    color: var(--muted);
+    color: var(--fg);
     padding-top: 4px;
+    white-space: nowrap;
   }
   .timeline-period.current { color: var(--accent); }
 
