@@ -1,10 +1,29 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rahul R</title>
+  <title>Rahul R - Software Engineer Trainee | Full-Stack Developer</title>
+  <meta name="description"
+    content="Software Engineer Trainee building full-stack web applications with Laravel, React, Django, and Node.js. Currently contributing to production systems at Trogon Media.">
+  <link rel="canonical" href="https://rahulr-dev.vercel.app/">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rahulr-dev.vercel.app/">
+  <meta property="og:title" content="Rahul R - Software Engineer Trainee | Full-Stack Developer">
+  <meta property="og:description"
+    content="Full-stack developer focused on reliable web systems. Laravel, React, Django, Node.js. Open to junior and full-stack roles.">
+  <meta property="og:image" content="https://rahulr-dev.vercel.app/assets/og-image.png">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://rahulr-dev.vercel.app/">
+  <meta name="twitter:title" content="Rahul R - Software Engineer Trainee">
+  <meta name="twitter:description" content="Full-stack web developer. Laravel, React, Django, Node.js.">
+  <meta name="twitter:image" content="https://rahulr-dev.vercel.app/assets/og-image.png">
+
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link
@@ -37,18 +56,19 @@
       <div class="hero-grid" aria-hidden="true"></div>
       <div class="hero-blob" aria-hidden="true"></div>
 
-      <p class="hero-tag" aria-label="Status: Open to Opportunities">Open to Opportunities — <span
+      <p class="hero-tag" aria-label="Status: Open to opportunities">Open to opportunities &mdash; <span
           class="current-year"></span></p>
 
       <h1 class="hero-title" id="hero-heading">
-        Rahul<br>
-        <span class="line2">R<span class="accent-word">.</span></span>
+        RAHUL
+        <span class="accent-word">.</span><span class="line2">R</span>
       </h1>
 
+      <p class="hero-role">Software Engineer Trainee · Trogon Media</p>
+
       <p class="hero-desc">
-        Turning ideas into <strong>scalable, user-centric web solutions</strong> — from backend logic and databases to
-        responsive, pixel-perfect interfaces. Software Engineer Trainee passionate about building reliable software and
-        solving real-world problems.
+        I turn product requirements into reliable, maintainable web systems &mdash; backend logic, databases, APIs, and
+        responsive interfaces. Currently contributing to production applications at Trogon Media.
       </p>
 
       <div class="hero-actions">
@@ -61,7 +81,13 @@
         </a>
       </div>
 
-      <div class="hero-scroll" aria-hidden="true">Scroll</div>
+      <div class="hero-editor" aria-hidden="true">
+        <div class="editor-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="editor-title">index.js</span>
+        </div>
+        <pre class="editor-body"><code id="editorText"></code><span class="editor-cursor">|</span></pre>
+      </div>
 
       <div class="hero-stats" aria-label="Quick stats">
         <div class="stat">
@@ -69,7 +95,7 @@
           <div class="stat-label">Projects</div>
         </div>
         <div class="stat">
-          <div class="stat-num">2<span>+</span></div>
+          <div class="stat-num">2</div>
           <div class="stat-label">Internship</div>
         </div>
         <div class="stat">
@@ -111,19 +137,20 @@
     <section id="about" aria-labelledby="about-heading">
       <div class="about-left reveal">
         <p class="section-tag">About Me</p>
-        <h2 class="section-title" id="about-heading">Building ideas<br>into reality.</h2>
+        <h2 class="section-title" id="about-heading">Building ideas into reality.</h2>
 
         <p class="about-bio">
-          I'm a <strong>Software Engineer Trainee</strong> with a background in Computer Science & Engineering from
-          <strong>KMCT College of Engineering, Kozhikode</strong>, and a strong interest in full-stack web development.
+          Software Engineer Trainee at Trogon Media and B.Tech Computer Science graduate from KMCT College of
+          Engineering. I work across the stack with PHP/Laravel, JavaScript, React, Python/Django, Node.js, MySQL, and
+          MongoDB.
         </p>
         <p class="about-bio">
-          I enjoy building and improving <strong>real-world web applications</strong> — from creating responsive user
-          interfaces to developing backend functionality, working with databases, and integrating APIs.
+          At Trogon I contribute to live production codebases: implementing features, fixing issues across
+          frontend/backend/database layers, and collaborating with the team to ship reliable changes.
         </p>
         <p class="about-bio">
-          I'm focused on growing as a software engineer by solving real-world problems, working with production
-          codebases, and continuously learning new technologies and development practices.
+          I focus on clear code, practical problem-solving, and continuously improving how I design and deliver web
+          applications.
         </p>
 
         <div class="about-stack">
@@ -131,72 +158,54 @@
           <div class="stack-pills">
             <span class="pill">HTML5</span>
             <span class="pill">CSS3</span>
+            <span class="pill">React</span>
             <span class="pill">JavaScript</span>
+            <span class="pill">Tailwind CSS</span>
             <span class="pill">Bootstrap</span>
-            <span class="pill">Python</span>
             <span class="pill">PHP</span>
             <span class="pill">Laravel</span>
-            <span class="pill">Django</span>
-            <span class="pill">Node.js</span>
             <span class="pill">MySQL</span>
-            <span class="pill">MongoDB</span>
             <span class="pill">Git & GitHub</span>
           </div>
         </div>
       </div>
 
       <div class="about-right reveal reveal-delay-2">
-        <p class="section-tag">Proficiency</p>
-        <div class="skill-bars" role="list" aria-label="Technical skills">
-          <div class="skill-item" role="listitem">
-            <div class="skill-header">
-              <span class="skill-name">Frontend Development</span>
-              <span class="skill-pct">80%</span>
+        <p class="section-tag">Technical Capabilities</p>
+        <div class="skills-matrix" role="list" aria-label="Evidence-based technical skills">
+          <div class="skill-group" role="listitem">
+            <div class="skill-group-header">
+              <span class="skill-group-label">Backend</span>
             </div>
-            <div class="skill-track">
-              <div class="skill-fill" style="--target: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                role="progressbar" aria-label="Frontend Development 80%"></div>
-            </div>
+            <p class="skill-group-items">Laravel, CodeIgniter, Django, Node.js/Express, PHP, REST APIs, JWT</p>
           </div>
-          <div class="skill-item" role="listitem">
-            <div class="skill-header">
-              <span class="skill-name">Backend & APIs</span>
-              <span class="skill-pct">70%</span>
+
+          <div class="skill-group" role="listitem">
+            <div class="skill-group-header">
+              <span class="skill-group-label">Frontend</span>
             </div>
-            <div class="skill-track">
-              <div class="skill-fill" style="--target: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"
-                role="progressbar" aria-label="Backend and APIs 45%"></div>
-            </div>
+            <p class="skill-group-items">React, HTML/CSS/JavaScript, Bootstrap, Tailwind, responsive UI</p>
           </div>
-          <div class="skill-item" role="listitem">
-            <div class="skill-header">
-              <span class="skill-name">Database Design</span>
-              <span class="skill-pct">50%</span>
+
+          <div class="skill-group" role="listitem">
+            <div class="skill-group-header">
+              <span class="skill-group-label">Data</span>
             </div>
-            <div class="skill-track">
-              <div class="skill-fill" style="--target: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"
-                role="progressbar" aria-label="Database Design 50%"></div>
-            </div>
+            <p class="skill-group-items">MySQL, MongoDB</p>
           </div>
-          <div class="skill-item" role="listitem">
-            <div class="skill-header">
-              <span class="skill-name">Python & Django</span>
-              <span class="skill-pct">70%</span>
+
+          <div class="skill-group" role="listitem">
+            <div class="skill-group-header">
+              <span class="skill-group-label">Other</span>
             </div>
-            <div class="skill-track">
-              <div class="skill-fill" style="--target: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                role="progressbar" aria-label="Python and Django 70%"></div>
-            </div>
+            <p class="skill-group-items">Git, Github, AI integration</p>
           </div>
-          <div class="skill-item" role="listitem">
-            <div class="skill-header">
-              <span class="skill-name">UI/UX & Design</span>
-              <span class="skill-pct">70%</span>
+
+          <div class="skill-group deepening" role="listitem">
+            <div class="skill-group-header">
+              <span class="skill-group-label">Deepening</span>
             </div>
-            <div class="skill-track">
-              <div class="skill-fill" style="--target: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"
-                role="progressbar" aria-label="UI/UX and Design 70%"></div>
-            </div>
+            <p class="skill-group-items">Production backend patterns, API design, security, deployment</p>
           </div>
         </div>
       </div>
@@ -206,17 +215,24 @@
     <section id="experience" aria-labelledby="experience-heading">
       <div class="reveal">
         <p class="section-tag">Experience</p>
-        <h2 class="section-title" id="experience-heading">Where<br>I've<br>Been.</h2>
+        <h2 class="section-title" id="experience-heading">Where I've Been.</h2>
       </div>
 
       <div class="timeline reveal reveal-delay-1" role="list" aria-label="Work experience timeline">
+
+        <!-- Scroll-animated vertical track -->
+        <div class="timeline-track" aria-hidden="true">
+          <div class="timeline-progress" id="timelineProgress"></div>
+        </div>
+
         <article class="timeline-item active" role="listitem">
-          <div class="timeline-period current">May 2026 – Present</div>
-          <div>
-            <h3 class="timeline-role">Software Engineer Trainee</h3>
+          <div class="timeline-node" aria-hidden="true"></div>
+          <div class="timeline-period current">May 2026 &ndash; Present</div>
+          <h3 class="timeline-role">Software Engineer Trainee</h3>
+          <div class="timeline-content">
             <p class="timeline-company">Trogon Media Pvt Ltd</p>
             <ul class="timeline-list">
-              <li>Contribute to production-grade web applications, writing clean and maintainable code in PHP,Laravel,
+              <li>Contribute to production-grade web applications, writing clean and maintainable code in PHP, Laravel,
                 CodeIgniter, JavaScript, HTML, CSS, Tailwind CSS, and Bootstrap.</li>
               <li>Design and build robust frontend, backend, database, and API-driven features that power real-world,
                 live systems.</li>
@@ -231,9 +247,10 @@
         </article>
 
         <article class="timeline-item" role="listitem">
-          <div class="timeline-period">Jan 2024 – Jan 2026</div>
-          <div>
-            <h3 class="timeline-role">Secretary & Treasurer</h3>
+          <div class="timeline-node" aria-hidden="true"></div>
+          <div class="timeline-period">Jan 2024 &ndash; Jan 2026</div>
+          <h3 class="timeline-role">Secretary &amp; Treasurer</h3>
+          <div class="timeline-content">
             <p class="timeline-company">IEEE Student Branch KMCTCE</p>
             <ul class="timeline-list">
               <li>Served as Treasurer for one year, managing financial activities, budgets, and branch records.</li>
@@ -245,9 +262,10 @@
         </article>
 
         <article class="timeline-item" role="listitem">
-          <div class="timeline-period">May 2025 – June 2025</div>
-          <div>
-            <h3 class="timeline-role">Android App Design & UI/UX Intern</h3>
+          <div class="timeline-node" aria-hidden="true"></div>
+          <div class="timeline-period">May 2025 &ndash; June 2025</div>
+          <h3 class="timeline-role">Android App Design &amp; UI/UX Intern</h3>
+          <div class="timeline-content">
             <p class="timeline-company">MetaLoop</p>
             <ul class="timeline-list">
               <li>Worked on Android application design and user interface development.</li>
@@ -259,9 +277,10 @@
         </article>
 
         <article class="timeline-item" role="listitem">
-          <div class="timeline-period">July 2024 – August 2024</div>
-          <div>
-            <h3 class="timeline-role">Web Development Intern</h3>
+          <div class="timeline-node" aria-hidden="true"></div>
+          <div class="timeline-period">July 2024 &ndash; August 2024</div>
+          <h3 class="timeline-role">Web Development Intern</h3>
+          <div class="timeline-content">
             <p class="timeline-company">Elewayte</p>
             <ul class="timeline-list">
               <li>Developed responsive web interfaces using HTML, CSS, JavaScript, and Bootstrap.</li>
@@ -283,8 +302,8 @@
           <h2 class="section-title" id="projects-heading">Projects</h2>
         </div>
 
-        <a href="https://github.com/RahulR324" target="_blank" class="view-all">
-          All Projects
+        <a href="projects.html" class="view-all">
+            Other Projects
           <svg width="14" height="10" viewBox="0 0 14 10" fill="none">
             <path d="M1 5H13M9 1L13 5L9 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
           </svg>
@@ -296,12 +315,12 @@
         <!-- Project 01 -->
         <div class="project-card large reveal">
           <div class="project-visual"></div>
-          <p class="project-num">01</p>
           <h3 class="project-title">Laravel Chat Application</h3>
 
           <p class="project-desc">
-            A modern chat application built with Laravel, MySQL, AJAX, and Sessions, supporting both
-            one-to-one private messaging and group conversations with a responsive, WhatsApp-inspired interface.
+            Session-based messaging app supporting one-to-one and group conversations. Built with Laravel, MySQL,
+            and AJAX polling. Features a WhatsApp-inspired responsive UI, latest-message previews, group management,
+            and timestamps. Demonstrates full-stack PHP development and practical real-time UI patterns.
           </p>
 
           <div class="project-features">
@@ -327,19 +346,20 @@
           </div>
 
           <div class="project-links">
-            <a href="https://github.com/RahulR324/chat-app" target="_blank" class="project-btn">GitHub Repo</a>
+            <a href="https://github.com/RahulR324/chat-app" target="_blank" rel="noopener noreferrer"
+              class="project-btn">GitHub Repo</a>
           </div>
         </div>
 
         <!-- Project 02 -->
         <div class="project-card medium reveal reveal-delay-1">
           <div class="project-visual"></div>
-          <p class="project-num">02</p>
           <h3 class="project-title">Realtime AI Chatbot (Laravel + Gemini AI)</h3>
 
           <p class="project-desc">
-            A modern AI-powered realtime chatbot built with Laravel, Laravel Reverb, WebSockets, and Google's
-            Gemini AI, delivering streaming AI responses similar to modern AI assistants.
+            Streaming AI chatbot using Laravel, Laravel Reverb (WebSockets), and Google Gemini. Delivers word-by-word
+            responses with typing indicators in a clean SaaS-style interface. Demonstrates real-time WebSocket
+            integration and third-party AI API consumption.
           </p>
 
           <div class="project-features">
@@ -363,19 +383,20 @@
           </div>
 
           <div class="project-links">
-            <a href="https://github.com/RahulR324/websocketchatbot" target="_blank" class="project-btn">GitHub Repo</a>
+            <a href="https://github.com/RahulR324/websocketchatbot" target="_blank" rel="noopener noreferrer"
+              class="project-btn">GitHub Repo</a>
           </div>
         </div>
 
         <!-- Project 03 -->
         <div class="project-card medium reveal reveal-delay-1">
           <div class="project-visual"></div>
-          <p class="project-num">03</p>
           <h3 class="project-title">Online Examination System</h3>
 
           <p class="project-desc">
-            A full-stack online examination platform built with React.js, CodeIgniter 4, and MySQL, allowing
-            students to securely attend exams while admins manage exams, questions, and results.
+            Full-stack online examination platform. Students take timed exams with auto-submit; admins create exams,
+            manage questions, and view results. Built with React, CodeIgniter 4, MySQL, JWT authentication, and
+            Tailwind. Shows end-to-end feature ownership from auth to reporting.
           </p>
 
           <div class="project-features">
@@ -400,19 +421,20 @@
           </div>
 
           <div class="project-links">
-            <a href="https://github.com/RahulR324/exam_system" target="_blank" class="project-btn">GitHub Repo</a>
+            <a href="https://github.com/RahulR324/exam_system" target="_blank" rel="noopener noreferrer"
+              class="project-btn">GitHub Repo</a>
           </div>
         </div>
 
         <!-- Project 04 -->
         <div class="project-card large reveal">
           <div class="project-visual"></div>
-          <p class="project-num">04</p>
           <h3 class="project-title">Civil Eye</h3>
 
           <p class="project-desc">
-            A web & app-based platform that allows citizens to report public infrastructure issues,
-            track complaint status, and improve transparency between authorities and the public.
+            Citizen complaint platform for reporting and tracking public infrastructure issues. Supports image
+            uploads, status workflows, and admin management. Web frontend + Django backend + Flutter mobile client.
+            Demonstrates full-stack web and cross-platform mobile delivery for a civic use case.
           </p>
 
           <div class="project-features">
@@ -440,151 +462,50 @@
 
           <div class="project-links">
             <a href="https://github.com/RahulR324/Civileye-AI-Integrated-Public-Complaint-Management-System"
-              target="_blank" class="project-btn">GitHub Repo</a>
-          </div>
-        </div>
-
-        <!-- Project 05 -->
-        <div class="project-card medium reveal reveal-delay-1">
-          <div class="project-visual"></div>
-          <p class="project-num">05</p>
-          <h3 class="project-title">MedFinder</h3>
-
-          <p class="project-desc">
-            A web application that helps users search for medicines based on district and locality,
-            compare prices across stores, and view store locations via embedded maps.
-          </p>
-
-          <div class="project-features">
-            <p class="project-features-label">Key Features</p>
-            <ul>
-              <li>Medicine search with filters based on name, district, and locality</li>
-              <li>Price comparison across multiple medical stores</li>
-              <li>Embedded map integration to view nearby pharmacy locations</li>
-              <li>Store details display including availability and pricing</li>
-            </ul>
-          </div>
-
-          <div class="project-tech">
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">CSS</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">Node.js</span>
-            <span class="tech-tag">MongoDB</span>
-          </div>
-
-          <div class="project-links">
-            <a href="https://github.com/RahulR324/medfinder.git" target="_blank" class="project-btn">GitHub Repo</a>
-          </div>
-        </div>
-
-        <!-- Project 06 -->
-        <div class="project-card medium reveal reveal-delay-1">
-          <div class="project-visual"></div>
-          <p class="project-num">06</p>
-          <h3 class="project-title">Weather App</h3>
-
-          <p class="project-desc">
-            A real-time weather application that shows current weather conditions,
-            temperature, and forecasts based on user location or search.
-          </p>
-
-          <div class="project-features">
-            <p class="project-features-label">Key Features</p>
-            <ul>
-              <li>Real-time weather updates using live API integration</li>
-              <li>Search weather by city name</li>
-              <li>Displays temperature, humidity, and weather conditions</li>
-              <li>Dynamic weather icons based on conditions</li>
-              <li>Responsive UI for mobile and desktop devices</li>
-            </ul>
-          </div>
-
-          <div class="project-tech">
-            <span class="tech-tag">HTML</span>
-            <span class="tech-tag">CSS</span>
-            <span class="tech-tag">JavaScript</span>
-            <span class="tech-tag">API Integration</span>
-          </div>
-
-          <div class="project-links">
-            <a href="https://github.com/RahulR324/weather_app" target="_blank" class="project-btn">GitHub Repo</a>
-          </div>
-        </div>
-
-        <!-- Project 07 -->
-        <div class="project-card medium reveal reveal-delay-2">
-          <div class="project-visual"></div>
-          <p class="project-num">07</p>
-          <h3 class="project-title">Task Manager</h3>
-
-          <p class="project-desc">
-            A full-stack productivity web application that helps users manage daily tasks efficiently with
-            authentication, real-time updates, and a modern dashboard UI.
-          </p>
-
-          <div class="project-features">
-            <p class="project-features-label">Key Features</p>
-            <ul>
-              <li>User authentication (Login / Register)</li>
-              <li>Create, update, and delete tasks</li>
-              <li>Mark tasks as completed or pending</li>
-              <li>Search and filter tasks</li>
-              <li>Responsive modern UI with dark mode support</li>
-            </ul>
-          </div>
-
-          <div class="project-tech">
-            <span class="tech-tag">React</span>
-            <span class="tech-tag">Node.js</span>
-            <span class="tech-tag">Express</span>
-            <span class="tech-tag">MongoDB</span>
-            <span class="tech-tag">CSS</span>
-          </div>
-
-          <div class="project-links">
-            <a href="https://github.com/RahulR324/task_manager" target="_blank" class="project-btn">GitHub Repo</a>
+              target="_blank" rel="noopener noreferrer" class="project-btn">GitHub Repo</a>
           </div>
         </div>
 
       </div>
-    </section>
     </section>
 
     <!-- CURRENTLY LEARNING -->
     <section id="learning" aria-labelledby="learning-heading">
       <div class="reveal">
         <p class="section-tag">Currently Learning</p>
-        <h2 class="section-title" id="learning-heading">Always<br>Growing.</h2>
+        <h2 class="section-title" id="learning-heading">Always Growing.</h2>
       </div>
       <div class="learning-grid">
         <div class="learning-card reveal reveal-delay-1">
-          <p class="learning-card-icon">01 — Backend</p>
+          <p class="learning-card-icon">01 &mdash; Backend</p>
           <p class="learning-card-text">Exploring class-based views, middleware, signals, and scalable patterns for
             building production-ready backends.</p>
         </div>
         <div class="learning-card reveal reveal-delay-1">
-          <p class="learning-card-icon">02 — APIs</p>
-          <p class="learning-card-text">REST API development — designing, versioning, and documenting scalable APIs for
+          <p class="learning-card-icon">02 &mdash; APIs</p>
+          <p class="learning-card-text">REST API development &mdash; designing, versioning, and documenting scalable
+            APIs
+            for
             modern web applications.</p>
         </div>
         <div class="learning-card reveal reveal-delay-2">
-          <p class="learning-card-icon">03 — Security</p>
-          <p class="learning-card-text">Authentication and security patterns — JWT, OAuth, session management, and
+          <p class="learning-card-icon">03 &mdash; Security</p>
+          <p class="learning-card-text">Authentication and security patterns &mdash; JWT, OAuth, session management, and
             secure coding practices.</p>
         </div>
         <div class="learning-card reveal reveal-delay-2">
-          <p class="learning-card-icon">04 — Best Practices</p>
+          <p class="learning-card-icon">04 &mdash; Best Practices</p>
           <p class="learning-card-text">Full-stack best practices including code architecture, testing, and
             maintainability across the application stack.</p>
         </div>
         <div class="learning-card reveal reveal-delay-3">
-          <p class="learning-card-icon">05 — Deployment</p>
-          <p class="learning-card-text">Deployment and hosting fundamentals — CI/CD pipelines, cloud platforms, and
+          <p class="learning-card-icon">05 &mdash; Deployment</p>
+          <p class="learning-card-text">Deployment and hosting fundamentals &mdash; CI/CD pipelines, cloud platforms,
+            and
             containerisation basics.</p>
         </div>
         <div class="learning-card reveal reveal-delay-3">
-          <p class="learning-card-icon">06 — Goal</p>
+          <p class="learning-card-icon">06 &mdash; Goal</p>
           <p class="learning-card-text">Becoming a skilled full-stack developer who can design, build, and scale
             efficient web applications end-to-end.</p>
         </div>
@@ -594,17 +515,31 @@
     <!-- CONTACT -->
     <section id="contact" aria-labelledby="contact-heading">
       <div class="contact-bg" aria-hidden="true"></div>
-      <p class="contact-eyebrow reveal">Let's Work Together</p>
-      <h2 class="contact-title reveal" id="contact-heading">
-        Got an<br>
-        <span class="ghost">idea?</span>
-      </h2>
-      <p class="contact-sub reveal reveal-delay-1">I'm open to internships, full-time roles, and interesting
-        collaborations. Let's build something great together.</p>
-      <a href="mailto:rahulratheeshp@gmail.com" class="contact-email reveal reveal-delay-2">rahulratheeshp@gmail.com</a>
+      <div class="contact-left">
+        <p class="contact-eyebrow reveal">Let's Work Together</p>
+        <h2 class="contact-title reveal" id="contact-heading">
+          Got an
+          <span class="ghost">idea?</span>
+        </h2>
+      </div>
+
+      <p class="contact-sub reveal reveal-delay-1">
+        <span class="contact-highlight">Open to Full-Stack Developer, and Software Engineer
+          roles.</span> I'm open to full-time roles, internships that convert, and interesting collaborations. Let's
+        talk.
+      </p>
 
       <nav class="socials reveal reveal-delay-3" aria-label="Social media links">
-        <a href="https://github.com/RahulR324" class="social-link" aria-label="GitHub profile">
+        <a href="mailto:rahulratheeshp@gmail.com" class="social-link" aria-label="Email Rahul R">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+            aria-hidden="true">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          Email
+        </a>
+        <a href="https://github.com/RahulR324" target="_blank" rel="noopener noreferrer" class="social-link"
+          aria-label="GitHub profile">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
             aria-hidden="true">
             <path
@@ -612,7 +547,8 @@
           </svg>
           GitHub
         </a>
-        <a href="https://www.linkedin.com/in/rahulr-cse/" class="social-link" aria-label="LinkedIn profile">
+        <a href="https://www.linkedin.com/in/rahulr-cse/" target="_blank" rel="noopener noreferrer" class="social-link"
+          aria-label="LinkedIn profile">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
             aria-hidden="true">
             <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z" />
@@ -621,7 +557,7 @@
           LinkedIn
         </a>
         <a href="assets/Rahul_R_Junior_Software_Engineer_Resume.pdf" class="social-link" download
-          aria-label="RAHUL_R_RESUME.pdf">
+          aria-label="Download Resume PDF">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
             aria-hidden="true">
             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
@@ -636,9 +572,10 @@
   </main>
 
   <footer>
-    <p class="footer-copy">© <span class="current-year"></span> Rahul R<span>.</span> Built with curiosity, consistency,
+    <p class="footer-copy">&copy; <span class="current-year"></span> Rahul R<span>.</span> Built with curiosity,
+      consistency,
       and code.</p>
-    <a href="#hero" class="footer-back" aria-label="Back to top">↑ Back to top</a>
+    <a href="#hero" class="footer-back" aria-label="Back to top">&uarr; Back to top</a>
   </footer>
   <script src="main.js"></script>
 </body>

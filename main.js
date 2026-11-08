@@ -19,7 +19,7 @@ const cursor = document.getElementById('cursor');
   animateCursorRing();
 
   // Enlarge cursor on interactive elements
-  document.querySelectorAll('a, button, .pill, .learning-card, .achievement-card').forEach(el => {
+  document.querySelectorAll('a, button, .pill, .skill-group, .learning-card, .achievement-card').forEach(el => {
     el.addEventListener('mouseenter', () => {
       cursor.style.width = '20px';
       cursor.style.height = '20px';
@@ -36,7 +36,6 @@ const cursor = document.getElementById('cursor');
 
   // Scroll reveal
   const revealEls = document.querySelectorAll('.reveal');
-  const skillFills = document.querySelectorAll('.skill-fill');
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -48,18 +47,6 @@ const cursor = document.getElementById('cursor');
   }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
 
   revealEls.forEach(el => observer.observe(el));
-
-  // Skill bars
-  const skillObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        setTimeout(() => entry.target.classList.add('animated'), 200);
-        skillObserver.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.3 });
-
-  skillFills.forEach(el => skillObserver.observe(el));
 
   // Nav active state
   const sections = document.querySelectorAll('section[id]');
@@ -86,6 +73,24 @@ const cursor = document.getElementById('cursor');
     });
   });
 
+  // Timeline progress bar scroll animation
+  const timelineProgress = document.getElementById('timelineProgress');
+  const experienceSection = document.getElementById('experience');
+
+  if (timelineProgress && experienceSection) {
+    window.addEventListener('scroll', () => {
+      const rect = experienceSection.getBoundingClientRect();
+      const viewportHeight = window.innerHeight;
+      const sectionTop = rect.top;
+      const sectionHeight = rect.height;
+
+      const scrollProgress = (viewportHeight - sectionTop) / (sectionHeight + viewportHeight);
+      const progress = Math.min(Math.max(scrollProgress * 100, 0), 100);
+
+      timelineProgress.style.height = progress + '%';
+    });
+  }
+
   // Smooth nav scroll
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -97,7 +102,36 @@ const cursor = document.getElementById('cursor');
     });
   });
 
-  // Current year
+  // Terminal typing animation
+const editorText = document.getElementById('editorText');
+if (editorText) {
+  const code = [
+    '// Laravel chat route',
+    "Route::post('/chat/send', [ChatController::class, 'send']);",
+    '',
+    '// React exam timer',
+    'useEffect(() => {',
+    '  const t = setInterval(() => setTime(s => s - 1), 1000);',
+    '  return () => clearInterval(t);',
+    '}, []);',
+  ];
+  let i = 0, j = 0, current = '';
+  function typeCode() {
+    if (i < code.length) {
+      if (j < code[i].length) {
+        current += code[i][j++];
+        editorText.textContent = current;
+        setTimeout(typeCode, 35);
+      } else {
+        current += '\n';
+        editorText.textContent = current;
+        i++; j = 0;
+        setTimeout(typeCode, 200);
+      }
+    }
+  }
+  typeCode();
+}
   document.addEventListener("DOMContentLoaded", () => {
     const year = new Date().getFullYear();
     document.querySelectorAll(".current-year").forEach(el => {
