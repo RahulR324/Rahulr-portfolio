@@ -1,0 +1,15 @@
+# robots.txt for https://rahulr-dev.vercel.app/
+User-agent: *
+Allow: /
+
+# Allow AI crawlers
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+
+Sitemap: https://rahulr-dev.vercel.app/sitemap.xml

@@ -226,21 +226,21 @@ nav {
   font-size: clamp(2.3rem, 5.2vw, 4.8rem);
   line-height: 1.08;
   letter-spacing: -0.03em;
-  margin-bottom: 32px;
+  margin-bottom: 12px;
   max-width: 980px;
   opacity: 0;
   animation: fadeUp 0.8s 0.4s forwards;
 }
 
-.hero-title .line2 {
-  color: transparent;
-  -webkit-text-stroke: 1.5px rgba(28, 25, 23, 0.22);
-  display: inline;
-}
-
-.hero-title .accent-word {
+.hero-subline {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.85rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
   color: var(--accent);
-  -webkit-text-stroke: 0;
+  margin-bottom: 24px;
+  opacity: 0;
+  animation: fadeUp 0.8s 0.5s forwards;
 }
 
 .hero-role {
@@ -248,7 +248,7 @@ nav {
   font-size: 0.85rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--muted);
   margin-bottom: 24px;
   opacity: 0;
   animation: fadeUp 0.8s 0.55s forwards;
@@ -335,9 +335,25 @@ nav {
 }
 
 @media (max-width: 900px) {
+  .hero-subline {
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 900px) {
   .hero-editor {
     display: none;
   }
+}
+
+.about-summary {
+  font-style: italic;
+  color: var(--text-soft);
+  border-left: 3px solid var(--accent);
+  padding-left: 16px;
+  margin-bottom: 24px;
 }
 
 .hero-desc {
@@ -1647,6 +1663,14 @@ footer {
   color: var(--accent);
 }
 
+.last-updated {
+  margin-left: 16px;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  color: var(--text-softer);
+}
+
 .footer-back {
   font-family: 'DM Mono', monospace;
   font-size: 0.68rem;
@@ -1704,6 +1728,13 @@ footer {
 
   to {
     transform: translateX(-50%);
+  }
+}
+
+/* Reduced motion - stop ticker animation */
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track {
+    animation: none;
   }
 }
 
@@ -1797,15 +1828,14 @@ footer {
     padding-top: 0;
   }
 
-  .timeline-node,
+  .timeline-node {
+    display: none;
+  }
+
   .timeline-period,
   .timeline-role,
   .timeline-content {
     grid-column: 1;
-  }
-
-  .timeline-node {
-    margin-top: 4px;
   }
 
   footer {
