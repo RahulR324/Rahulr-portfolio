@@ -60,7 +60,7 @@ const cursor = document.getElementById('cursor');
       }
     });
     navLinks.forEach(link => {
-      link.style.color = link.getAttribute('href') === '#' + current
+      link.style.color = link.getAttribute('href').endsWith('#' + current)
         ? 'var(--accent)' : '';
     });
   });
